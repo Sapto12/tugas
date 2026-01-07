@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insomnia Store - Toko Online Premium</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        
+        
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <h1>CrdSrfng</h1>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Produk</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                    <div class="nav-icons">
+                        <a href="#" class="icon-link"><i class="fas fa-search"></i></a>
+                        <a href="#" class="icon-link"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                        <a href="#" class="icon-link"><i class="fas fa-user"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="home">
+        <img src="assets/evgeniy-smersh-LKv19Pdbz2I-unsplash.jpg" alt="">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>CROWD SURFING</h2>
+                <p>Temukan produk premium pilihan untuk gaya hidup Anda</p>
+                <button class="btn btn-primary">Belanja Sekarang</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Produk Unggulan</h2>
+                <p>Pilihan terbaik dari koleksi kami</p>
+            </div>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="fashion">Fashion</button>
+                <button class="filter-btn" data-filter="accessories">Aksesori</button>
+                <button class="filter-btn" data-filter="lifestyle">Lifestyle</button>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card" data-category="fashion">
+                    <div class="product-image">
+                        <img src="assets/valentin-lacoste-ZpYc63z7kYM-unsplash.jpg" alt="Jaket Premium">
+                        <span class="badge">-20%</span>
+                        <div class="product-overlay">
+                            <button class="btn btn-small">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Jaket Premium Wool</h3>
+                        <p class="category">Fashion</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(128)</span>
+                        </div>
+                        <div class="price">
+                            <span class="original-price">Rp 850.000</span>
+                            <span class="sale-price">Rp 680.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image">
+                        <img src="assets/toa-heftiba-FlXaHFDAFYo-unsplash.jpg" alt="Jam Tangan">
+                        <span class="badge new">BARU</span>
+                        <div class="product-overlay">
+                            <button class="btn btn-small">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Jam Tangan Analog Elegant</h3>
+                        <p class="category">Aksesori</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(256)</span>
+                        </div>
+                        <div class="price">
+                            <span class="sale-price">Rp 450.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card" data-category="lifestyle">
+                    <div class="product-image">
+                        <img src="assets/old-youth-EaEMK2xuHdA-unsplash.jpg     " alt="Sneaker">
+                        <span class="badge">-15%</span>
+                        <div class="product-overlay">
+                            <button class="btn btn-small">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sneaker Casual Modern</h3>
+                        <p class="category">Lifestyle</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(89)</span>
+                        </div>
+                        <div class="price">
+                            <span class="original-price">Rp 600.000</span>
+                            <span class="sale-price">Rp 510.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card" data-category="fashion">
+                    <div class="product-image">
+                        <img src="assets/ryan-hoffman-A7f7XRKgUWc-unsplash.jpg" alt="Kemeja">
+                        <div class="product-overlay">
+                            <button class="btn btn-small">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kemeja Oxford Katun</h3>
+                        <p class="category">Fashion</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(165)</span>
+                        </div>
+                        <div class="price">
+                            <span class="sale-price">Rp 350.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image">
+                        <img src="assets/valentin-lacoste-ZpYc63z7kYM-unsplash.jpg" alt="Tas">
+                        <span class="badge">-25%</span>
+                        <div class="product-overlay">
+                            <button class="btn btn-small">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tas Backpack Kulit</h3>
+                        <p class="category">Aksesori</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(342)</span>
+                        </div>
+                        <div class="price">
+                            <span class="original-price">Rp 1.200.000</span>
+                            <span class="sale-price">Rp 900.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="product-card" data-category="lifestyle">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=400&fit=crop" alt="Sunglasses">
+                        <span class="badge new">BARU</span>
+                        <div class="product-overlay">
+                            <button class="btn btn-small">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-info">
+                        <h3>Kacamata Hitam Trendy</h3>
+                        <p class="category">Lifestyle</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(201)</span>
+                        </div>
+                        <div class="price">
+                            <span class="sale-price">Rp 380.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 7 -->
+                <div class="product-card" data-category="fashion">
+                    <div class="product-image">
+                        <img src="assets/ciocan-ciprian-Ziy9JtH-sPI-unsplash(1).jpg" alt="Celana">
+                        <span class="badge">-10%</span>
+                        <div class="product-overlay">
+                            <button class="btn btn-small">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Celana Chinos Premium</h3>
+                        <p class="category">Fashion</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(178)</span>
+                        </div>
+                        <div class="price">
+                            <span class="original-price">Rp 550.000</span>
+                            <span class="sale-price">Rp 495.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 8 -->
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image">
+                        <img src="" alt="Ikat Pinggang">
+                        <div class="product-overlay">
+                            <button class="btn btn-small">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ikat Pinggang Kulit Asli</h3>
+                        <p class="category">Aksesori</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(134)</span>
+                        </div>
+                        <div class="price">
+                            <span class="sale-price">Rp 280.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Pengiriman Cepat</h3>
+                    <p>Gratis ongkir untuk pembelian diatas Rp 100.000</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Pembayaran Aman</h3>
+                    <p>Transaksi terenkripsi dan terjamin 100%</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-undo"></i>
+                    <h3>Garansi Kualitas</h3>
+                    <p>Garansi uang kembali 30 hari jika tidak puas</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Customer Support 24/7</h3>
+                    <p>Tim support siap membantu kapan saja</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Dapatkan Penawaran Eksklusif</h2>
+                <p>Berlangganan newsletter kami untuk promo dan diskon terbaru</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Masukkan email Anda" required>
+                    <button type="submit" class="btn btn-primary">Berlangganan</button>
+                </form>
+            </div>
+        </div>
+    </section>  
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Tentang Kami</h4>
+                    <ul>
+                        <li><a href="#">Tentang INSOMNIA</a></li>
+                        <li><a href="#">Karir</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Bantuan</h4>
+                    <ul>
+                        <li><a href="#">Hubungi Kami</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Belanja</h4>
+                    <ul>
+                        <li><a href="#">Produk Terbaru</a></li>
+                        <li><a href="#">Sale</a></li>
+                        <li><a href="#">Koleksi</a></li>
+                        <li><a href="#">Flash Deal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ikuti Kami</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 INSOMNIA Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
