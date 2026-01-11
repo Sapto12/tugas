@@ -1,0 +1,531 @@
+/* ============================================
+   PRODUCT PAGE STYLES
+   ============================================ */
+
+.product {
+    padding: 80px 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(248, 246, 243, 0.75) 100%), 
+                url('../../asset/leo_visions-PgynjbnECzk-unsplash.jpg') center/cover no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* ============================================
+   PRODUCT HEADER
+   ============================================ */
+
+.product-header {
+    text-align: center;
+    margin-bottom: 60px;
+    animation: fadeInUp 0.8s ease;
+}
+
+.product-header h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.product-header p {
+    font-size: 18px;
+    color: var(--text-light);
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* ============================================
+   PRODUCT FILTER
+   ============================================ */
+
+.product-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.filter-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-btn {
+    padding: 12px 28px;
+    border: 2px solid var(--border-color);
+    background-color: transparent;
+    color: var(--text-dark);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.filter-btn:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-color: var(--primary-color);
+}
+
+/* ============================================
+   PRODUCT GRID
+   ============================================ */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* ============================================
+   PRODUCT CARD
+   ============================================ */
+
+.product-card {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: var(--transition);
+    animation: fadeInUp 0.6s ease backwards;
+    border: 1px solid var(--border-color);
+}
+
+.product-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.product-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.product-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.product-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.product-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.product-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-light);
+}
+
+/* ============================================
+   PRODUCT IMAGE
+   ============================================ */
+
+.product-image {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+    background-color: var(--bg-gray);
+}
+
+.product-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.08);
+}
+
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 10;
+}
+
+.product-card:hover .product-overlay {
+    opacity: 1;
+}
+
+.product-overlay .btn-sm {
+    padding: 10px 28px;
+    font-size: 12px;
+}
+
+/* ============================================
+   PRODUCT BADGE
+   ============================================ */
+
+.product-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 6px 16px;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border-radius: 4px;
+    z-index: 5;
+}
+
+.product-badge.sale-badge {
+    background-color: #e74c3c;
+    color: var(--secondary-color);
+}
+
+/* ============================================
+   PRODUCT INFO
+   ============================================ */
+
+.product-info {
+    padding: 24px;
+}
+
+.product-info h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    line-height: 1.4;
+    min-height: 40px;
+}
+
+.product-category {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+/* ============================================
+   PRODUCT RATING
+   ============================================ */
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+
+.product-rating i {
+    color: var(--accent-color);
+    font-size: 12px;
+}
+
+.product-rating span {
+    color: var(--text-muted);
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+/* ============================================
+   PRODUCT PRICE
+   ============================================ */
+
+.product-price {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.original-price {
+    font-size: 14px;
+    color: var(--text-muted);
+    text-decoration: line-through;
+}
+
+/* ============================================
+   PRODUCT BUTTON
+   ============================================ */
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    width: 100%;
+    padding: 12px;
+    font-size: 13px;
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   LOAD MORE
+   ============================================ */
+
+.load-more {
+    text-align: center;
+}
+
+.load-more .btn-primary {
+    min-width: 200px;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 30px;
+    }
+
+    .product-header h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        padding: 60px 0;
+    }
+
+    .product-header h1 {
+        font-size: 32px;
+    }
+
+    .product-header p {
+        font-size: 16px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .product-info {
+        padding: 16px;
+    }
+
+    .product-info h3 {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .filter-group {
+        gap: 10px;
+    }
+
+    .filter-btn {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        padding: 40px 0;
+    }
+
+    .product-header h1 {
+        font-size: 26px;
+    }
+
+    .product-header p {
+        font-size: 14px;
+    }
+
+    .product-header {
+        margin-bottom: 40px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    .product-card {
+        border: none;
+        box-shadow: var(--shadow-sm);
+    }
+
+    .product-info {
+        padding: 12px;
+    }
+
+    .product-info h3 {
+        font-size: 13px;
+        min-height: auto;
+    }
+
+    .product-category {
+        font-size: 11px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    .product-rating {
+        font-size: 11px;
+    }
+
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 11px;
+    }
+
+    .btn-outline {
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    .product-badge {
+        top: 8px;
+        right: 8px;
+        padding: 4px 12px;
+        font-size: 10px;
+    }
+}
+
+/* ============================================
+   NOTIFICATION STYLES
+   ============================================ */
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-lg);
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateX(400px);
+    transition: var(--transition);
+    max-width: 300px;
+}
+
+.notification.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.notification.success {
+    background-color: #27ae60;
+    color: var(--secondary-color);
+}
+
+.notification.error {
+    background-color: #e74c3c;
+    color: var(--secondary-color);
+}
+
+/* ============================================
+   CART BADGE
+   ============================================ */
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    z-index: 5;
+    animation: pulse 0.6s ease-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* ============================================
+   FADE IN ANIMATION
+   ============================================ */
+
+.product-card {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.fade-in {
+    animation: fadeInCard 0.4s ease forwards;
+}
+
+@keyframes fadeInCard {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
